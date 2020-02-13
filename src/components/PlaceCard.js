@@ -6,29 +6,34 @@ class PlaceCard extends React.Component {
     super(props);
 
     this.state = {
-      locale: "ru",  
-      countries:[
-          {"_id":"ru","name":"Россия"},
-          {"_id":"us","name":"США"},
-          {"_id":"fi","name":"Финляндия"},
+      locale: "ru",
+      countries: [
+        { "_id": "ru", "name": "Россия" },
+        { "_id": "us", "name": "США" },
+        { "_id": "fi", "name": "Финляндия" },
 
       ],
-      regions:[
-        {"_id":"ru1","name":"Центральная Россия"},
-        {"_id":"ru2","name":"Карелия"},
-        {"_id":"ru3","name":"Байкал"},
-        {"_id":"ru4","name":"Кольский полуостров"}
+      regions: [
+        { "_id": "ru1", "name": "Центральная Россия" },
+        { "_id": "ru2", "name": "Карелия" },
+        { "_id": "ru3", "name": "Байкал" },
+        { "_id": "ru4", "name": "Кольский полуостров" }
       ]
     };
-    
+
   }
 
-  lab = (label) =>{
-      return labels[label][this.state.locale];
+  lab = (label) => {
+    return labels[label][this.state.locale];
   }
-  
+
   render() {
-    return <p>{this.lab('name')}</p>;
+    return (
+      <div style={{ padding: 10 }}>
+
+        <p>{this.lab('name')}</p>
+      </div>
+    );
   }
 
   componentDidMount() {
