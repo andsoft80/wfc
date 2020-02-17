@@ -19,9 +19,9 @@ const labels = {
         "ru" : "Тел.",
         "en" : "Tel."
     },
-    "mail" : {
+    "email" : {
         "ru" : "Эл.почта",
-        "en" : "Mail"
+        "en" : "Email"
     },
     "title" : {
         "ru" : "Заголовок",
