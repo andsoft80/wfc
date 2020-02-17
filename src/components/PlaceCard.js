@@ -1,21 +1,12 @@
 import React from 'react';
-import labels from '../locale'
+import labels from './PlaceCard_locale'
 import TextField from '@material-ui/core/TextField';
 import Grid from '@material-ui/core/Grid';
-
-// import Form, { Item } from 'devextreme-react/form';
-import 'devextreme-react/text-area';
-
 import './form.css';
-import ResponsiveBox, {
-  Row,
-  Col,
-  Item,
-  Location
-} from 'devextreme-react/responsive-box';
-function screen(width) {
-  return (width < 700) ? 'sm' : 'lg';
-}
+
+// function screen(width) {
+//   return (width < 700) ? 'sm' : 'lg';
+// }
 class PlaceCard extends React.Component {
   constructor(props) {
     super(props);
@@ -54,16 +45,18 @@ class PlaceCard extends React.Component {
         <h1>Contact Us</h1>
         <form>
           <Grid container spacing={2}>
-            <Grid item xs={12} sm = {6}>
-              <TextField id="firstName" label={this.lab('firstName')} variant="filled" name="firstName" helperText="Some important text" style={{ marginBottom: 0 }} fullWidth/>
+            <Grid item xs={12} sm={6}>
+              <TextField id="firstName" label={this.lab('firstName')} variant="filled" name="firstName" helperText="Some important text" style={{ marginBottom: 0 }} fullWidth />
             </Grid>
-            <Grid item xs={12} sm = {6}>
-              <TextField id="secondName" label={this.lab('secondName')} variant="filled" name="secondName" helperText="Some important text" style={{ marginBottom: 0 }} fullWidth/>
+            <Grid item xs={12} sm={6}>
+              <TextField id="secondName" label={this.lab('secondName')} variant="filled" name="secondName" helperText="Some important text" style={{ marginBottom: 0 }} fullWidth />
             </Grid>
             <Grid item xs={12} >
               <TextField id="email" label={this.lab('email')} variant="filled" name="email" helperText="Some important text" style={{ marginBottom: 0 }} fullWidth type="email" />
             </Grid>
-            <input type="submit" value='Send' />
+            <Grid item xs={6} >
+              <input type="submit" value='Send' />
+            </Grid>
           </Grid>
         </form>
       </div>
