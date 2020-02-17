@@ -91,7 +91,7 @@ class PlaceCard extends React.Component {
               screen="lg"
             ></Location>
             <Location
-              row={2}
+              row={1}
               col={0}
               screen="sm"
             ></Location>
