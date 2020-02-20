@@ -27,6 +27,10 @@ const labels = {
         "ru" : "Заголовок",
         "en" : "Title"
     },
+    "subTitle" : {
+        "ru" : "Подзаголовок",
+        "en" : "Subtitle"
+    },
     "startDate" : {
         "ru" : "Дата начала",
         "en" : "Start date"
@@ -79,6 +83,10 @@ const labels = {
         "ru" : "Фото галерея",
         "en" : "Photo gallery"
     },
+    "gallery" : {
+        "ru" : "Галерея",
+        "en" : "Gallery"
+    },
     "description" : {
         "ru" : "Описание",
         "en" : "Description"
@@ -90,6 +98,22 @@ const labels = {
     "secondName" : {
         "ru" : "Фамилия",
         "en" : "Second name"
+    },
+    "newPlace" : {
+        "ru" : "Новое место",
+        "en" : "New place"
+    },
+    "info" : {
+        "ru" : "Информация",
+        "en" : "Information"
+    },
+    "program" : {
+        "ru" : "Программа",
+        "en" : "Program"
+    },
+    "inclusive" : {
+        "ru" : "Включено",
+        "en" : "Inclusive"
     },
 
 
